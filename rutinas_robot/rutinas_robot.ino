@@ -314,27 +314,72 @@ void setup() {
   // RESET
   attachInterrupt(digitalPinToInterrupt(botA2),reset,RISING);
 }
-void bluetooth (){
-  if (Serial.available())
-  {
-    String Direccion = Serial.readString();
+void bluetooth() {
+  while (Serial.available()) {
+    char Direccion = Serial.read();
 
-    if (Direccion == "U"){
-      adelante(200,255l);
+    switch (Direccion) {
+      case 'U':
+        digitalWrite(dirD1, 0);
+        digitalWrite(dirD2, 1);
+        digitalWrite(dirI1, 1);
+        digitalWrite(dirI2, 0);
+        for (int i = 0; i <= 200; i++) {
+          analogWrite(pwmD, i);
+          analogWrite(pwmI, i);
+          contador = millis();
+          while(millis()<contador +1.5){
+
+          }
+        }
+        break;
+      case 'D':
+        digitalWrite(dirD1, 1);
+        digitalWrite(dirD2, 0);
+        digitalWrite(dirI1, 0);
+        digitalWrite(dirI2, 1);
+        for (int i = 0; i <= 200; i++) {
+          analogWrite(pwmD, i);
+          analogWrite(pwmI, i);
+          contador = millis();
+          while(millis()<contador +1.5){
+            
+          }
+        }
+        break;
+      case 'L':
+        digitalWrite(dirD1, 1);
+        digitalWrite(dirD2, 0);
+        digitalWrite(dirI1, 1);
+        digitalWrite(dirI2, 0);
+        for (int i = 0; i <= 200; i++) {
+          analogWrite(pwmD, i);
+          analogWrite(pwmI, i);
+          contador = millis();
+          while(millis()<contador +1.5){
+            
+          }
+        }
+        break;
+      case 'R':
+        digitalWrite(dirD1, 0);
+        digitalWrite(dirD2, 1);
+        digitalWrite(dirI1, 0);
+        digitalWrite(dirI2, 1);
+        for (int i = 0; i <= 200; i++) {
+          analogWrite(pwmD, i);
+          analogWrite(pwmI, i);
+          contador = millis();
+          while(millis()<contador +1.5){
+            
+          }
+        }
+        break;
+      case 'S':
+        alto(200,30);
+        break;
     }
-    if (Direccion == "D"){
-      atras(200,255);
-    }
-        if (Direccion == "L"){
-      izquierda(45);
-    }
-        if (Direccion == "R"){
-      derecha(45);
-    }
-        if (Direccion == "S"){
-      alto(200,30);
-    }
-}
+  }
 }
 void cambiar_pantalla( String texto,  float variable, int mapa_de_bits){
   unsigned long contador = 0;
@@ -486,7 +531,7 @@ void atras(int tiempo, int velomotor) {
 
 }
 
-void adelante(int tiempo, int velomotor) {
+void adelante(int tiempo, int velomotor, String siguiente) {
 
   digitalWrite(dirD1, 0);
   digitalWrite(dirD2, 1);
@@ -502,7 +547,7 @@ void adelante(int tiempo, int velomotor) {
   contador = millis();
   // cambiar_pantalla("Velocidad: ",velomotor,2);
   while(millis() < contador + tiempo){
-    sensor_proximidad(10,15,20);
+    sensor_proximidad(10,15,25,siguiente);
   }
   digitalWrite(buzzer_pin, LOW);
 }
@@ -579,8 +624,9 @@ void mover_servomotor(){
     cambiar_pantalla("Angulo: ",angulo_servo,5);
     servoMotor.write(angulo_servo);
 }
-void sensor_proximidad(int limite1,int limite2, int limite3){
+void sensor_proximidad(int limite1,int limite2, int limite3,String direccion){
   unsigned long contador = 0;
+  uint32_t color = strip.Color(0,0,0);
   digitalWrite(trig, HIGH);
   if(millis() > (contador + 100) && (aux == true)){
     digitalWrite(trig, LOW);
@@ -593,12 +639,39 @@ void sensor_proximidad(int limite1,int limite2, int limite3){
     aux = false;
     cambiar_pantalla("Distancia(cm): ",distancia,1);
   }
-  if(millis() > (contador + 100)){
+  if(millis() > (contador + 200)){
     if (distancia<=limite1){
       analogWrite(led1,1022);
       analogWrite(led2,1022);
       analogWrite(led3,1022);
       digitalWrite(buzzer_pin,HIGH);
+      Serial.println(direccion);
+      alto(500,10);
+       if(direccion == "D"){
+      color = strip.Color(0,0,255);
+    }
+    if(direccion == "I"){
+      color = strip.Color(0,255,0);
+    }
+    if(direccion == "A"){
+      color = strip.Color(255,0,0);
+    }
+    for (int i = 0; i<4; i++){
+      strip.setPixelColor(i,color);
+      strip.show();
+    }
+      if(direccion == "D"){
+        derecha(90);
+      }
+      if (direccion == "I"){
+        izquierda(90);
+      }
+      if (direccion == "A"){
+        atras(1000,200);
+      }
+      alto(100,10);
+      aux = true;
+      contador = 0;
     }
     if (distancia>limite1 && distancia<=limite2){
       analogWrite(led1,1022);
@@ -790,7 +863,7 @@ do {
           
           
           if(item_selected==0){  
-            adelante(500,255);
+            adelante(500,255,"N");
             atras(500,255);
             alto(1000,100);
             derecha(90);
@@ -805,12 +878,16 @@ do {
             potenciometro();
           }
           else if(item_selected==1){ 
-            adelante(1500,255);
-            atras(1000,255);
-            alto(500,10);
+            // adelante(5000,220,"D");
+            // adelante(5000,220,"I");
+            // adelante(5000,200,"A");
+            mover_servomotor();
+
           }
           else if(item_selected==2){
-            sensor_proximidad(10,15,20);
+            for (int i = 0; i<14; i++){
+              encender_buzzer(musica[i],tiempos[i]);
+            }
             
           }
           else if (item_selected==3){
