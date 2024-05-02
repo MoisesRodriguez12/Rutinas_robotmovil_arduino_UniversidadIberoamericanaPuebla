@@ -286,6 +286,7 @@ int demo_mode_delay = 0; // demo mode delay = used to slow down the screen switc
 //SERVO------------------
   // pin 5 pwm;
   Servo servoMotor;
+  int posicion_bluetooth = 0;
 //LEDS----------------
   //analog
   #define led3 4 
@@ -371,7 +372,6 @@ String leer_completo() {
   return resultado;
 }
 void bluetooth() {
-  int posicion_bluetooth = 0;
   leds = 1;
   uint32_t rgb_m = 0;
   u8g.drawBitmapP(32, 5, 64/8, 64, iconos[6]);
@@ -460,7 +460,7 @@ void bluetooth() {
         digitalWrite(buzzer_pin,LOW);
         break;
       case 'X':
-        if (posicion_bluetooth <= 170){
+        if (posicion_bluetooth <= 80){
           posicion_bluetooth = posicion_bluetooth + 10;
           Serial.println(posicion_bluetooth);
         }
