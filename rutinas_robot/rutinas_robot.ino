@@ -459,18 +459,20 @@ void bluetooth() {
       case 'I':
         digitalWrite(buzzer_pin,LOW);
         break;
-      case 'X':
+      case 'Y':
         if (posicion_bluetooth <= 80){
           posicion_bluetooth = posicion_bluetooth + 10;
           Serial.println(posicion_bluetooth);
+          servoMotor.write(posicion_bluetooth);
         }
-        servoMotor.write(posicion_bluetooth);
-      case 'Y':
+        break;
+      case 'X':
         if (posicion_bluetooth >= 10){
           posicion_bluetooth = posicion_bluetooth - 10;
           Serial.println(posicion_bluetooth);
+          servoMotor.write(posicion_bluetooth);
         }
-        servoMotor.write(posicion_bluetooth);
+        break;
     }
     }
   }
