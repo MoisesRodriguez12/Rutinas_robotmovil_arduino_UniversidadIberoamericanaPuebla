@@ -195,15 +195,50 @@ const unsigned char icono_angulo [] PROGMEM = {
 	0x00, 0x01, 0xc0, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x03, 0xc0, 0x00, 
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x03, 0x80, 0x00, 0x00, 0x00, 0x00, 0x00
 };
+const unsigned char icono_bluetooth [] PROGMEM = {
+	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x1e, 0x00, 0x00, 0x00, 0x00, 
+	0x00, 0x00, 0x00, 0x1f, 0x80, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x1f, 0xc0, 0x00, 0x00, 0x00, 
+	0x00, 0x00, 0x00, 0x1f, 0xe0, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x1f, 0xf0, 0x00, 0x00, 0x00, 
+	0x00, 0x00, 0x00, 0x1f, 0xfc, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x1f, 0xfe, 0x00, 0x00, 0x00, 
+	0x00, 0x00, 0x00, 0x1f, 0xff, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x1f, 0x7f, 0x80, 0x00, 0x00, 
+	0x00, 0x00, 0x00, 0x1f, 0x3f, 0xe0, 0x00, 0x00, 0x00, 0x00, 0x0c, 0x1f, 0x1f, 0xf0, 0x00, 0x00, 
+	0x00, 0x00, 0x1f, 0x1f, 0x07, 0xf8, 0x00, 0x00, 0x00, 0x00, 0x1f, 0x9f, 0x03, 0xf8, 0x00, 0x00, 
+	0x00, 0x00, 0x1f, 0xdf, 0x07, 0xf8, 0x00, 0x00, 0x00, 0x00, 0x1f, 0xff, 0x1f, 0xf8, 0x00, 0x00, 
+	0x00, 0x00, 0x0f, 0xff, 0x7f, 0xf0, 0x00, 0x00, 0x00, 0x00, 0x07, 0xff, 0xff, 0xc0, 0x00, 0x00, 
+	0x00, 0x00, 0x03, 0xff, 0xff, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01, 0xff, 0xfe, 0x00, 0x00, 0x00, 
+	0x00, 0x00, 0x00, 0xff, 0xf8, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x7f, 0xe0, 0x00, 0x00, 0x00, 
+	0x00, 0x00, 0x00, 0x7f, 0xf0, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xff, 0xf8, 0x00, 0x00, 0x00, 
+	0x00, 0x00, 0x01, 0xff, 0xfe, 0x00, 0x00, 0x00, 0x00, 0x00, 0x03, 0xff, 0xff, 0x80, 0x00, 0x00, 
+	0x00, 0x00, 0x07, 0xff, 0xff, 0xc0, 0x00, 0x00, 0x00, 0x00, 0x0f, 0xff, 0x7f, 0xf0, 0x00, 0x00, 
+	0x00, 0x00, 0x1f, 0xff, 0x1f, 0xf8, 0x00, 0x00, 0x00, 0x00, 0x1f, 0xdf, 0x07, 0xf8, 0x00, 0x00, 
+	0x00, 0x00, 0x1f, 0x9f, 0x03, 0xf8, 0x00, 0x00, 0x00, 0x00, 0x1f, 0x1f, 0x0f, 0xf8, 0x00, 0x00, 
+	0x00, 0x00, 0x00, 0x1f, 0x1f, 0xf0, 0x00, 0x00, 0x00, 0x00, 0x00, 0x1f, 0x3f, 0xc0, 0x00, 0x00, 
+	0x00, 0x00, 0x00, 0x1f, 0x7f, 0x80, 0x00, 0x00, 0x00, 0x00, 0x00, 0x1f, 0xff, 0x00, 0x00, 0x00, 
+	0x00, 0x00, 0x00, 0x1f, 0xfe, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x1f, 0xfc, 0x00, 0x00, 0x00, 
+	0x00, 0x00, 0x00, 0x1f, 0xf0, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x1f, 0xe0, 0x00, 0x00, 0x00, 
+	0x00, 0x00, 0x00, 0x1f, 0xc0, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x1f, 0x80, 0x00, 0x00, 0x00, 
+	0x00, 0x00, 0x00, 0x1e, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+};
 // Array of all bitmaps for convenience. (Total bytes used to store images in PROGMEM = 496)
-const int iconosallArray_LEN = 6;
-const unsigned char* iconos[6] = {
+const int iconosallArray_LEN = 7;
+const unsigned char* iconos[7] = {
 	0,
   icono_regla,
   icono_velocidad,
   icono_bocina,
   icono_reloj,
-  icono_angulo
+  icono_angulo,
+  icono_bluetooth
 };
 
 
@@ -268,12 +303,13 @@ int demo_mode_delay = 0; // demo mode delay = used to slow down the screen switc
 //BUZZER----------------------
   #define buzzer_pin 9
   //              Do0 Re1 Mi2 Fa3 Sol4 La5 Si6 
-  const int notas [] = {261,294,329,349,392,440,494};
+  const int notas [] = {523,587,659,698,783,880,987};
   const int musica [] = {0,0,4,4,5,5,4,3,3,2,2,1,1,0};
   const int tiempos []= {250,250,250,250,250,250,500,250,250,250,250,250,250,500};
 //NEOPIXEL-------------------
   #define neopixel_pin  10
   #define num_leds 4 
+  int leds = 0;
   Adafruit_NeoPixel strip = Adafruit_NeoPixel(num_leds,neopixel_pin,NEO_GRB + NEO_KHZ800);
   const int rojos [] = {255,0,0,125};
   const int verdes [] = {0,255,0,125};
@@ -314,21 +350,54 @@ void setup() {
   // RESET
   attachInterrupt(digitalPinToInterrupt(botA2),reset,RISING);
 }
-void bluetooth() {
+uint32_t HexaRGB(String hex) {
+  long numero = (long) strtol( &hex[0], NULL, 16);
+  int r = numero >> 16;
+  int g = numero >> 8 & 0xFF;
+  int b = numero & 0xFF;
+  return strip.Color(r,g,b);
+}
+String leer_completo() {
+  String resultado = "";
   while (Serial.available()) {
-    char Direccion = Serial.read();
-
+    delay(3);  // pequeño retraso para permitir que se llene el buffer de entrada
+    char c = Serial.read();  // obtiene un byte del buffer serie
+    if (c == '\n') {  // si se encuentra un salto de línea, se considera que el string está completo
+      break;
+    } else {
+      resultado += c;  // añade el carácter al string
+    }
+  }
+  return resultado;
+}
+void bluetooth() {
+  int posicion_bluetooth = 0;
+  leds = 1;
+  uint32_t rgb_m = 0;
+  u8g.drawBitmapP(32, 5, 64/8, 64, iconos[6]);
+  while (Serial.available()) {
+    String instruccion = leer_completo();
+    if(instruccion.length()>1){
+    uint32_t rgb = HexaRGB(instruccion);
+    rgb_m = rgb;
+    for (int i = 0; i<num_leds; i++){
+      strip.setPixelColor(i,rgb_m);
+      }
+      strip.show();
+    }
+    else{
+    char Direccion = instruccion[0];
     switch (Direccion) {
       case 'U':
         digitalWrite(dirD1, 0);
         digitalWrite(dirD2, 1);
         digitalWrite(dirI1, 1);
         digitalWrite(dirI2, 0);
-        for (int i = 0; i <= 200; i++) {
+        for (int i = 0; i <= 255; i++) {
           analogWrite(pwmD, i);
           analogWrite(pwmI, i);
           contador = millis();
-          while(millis()<contador +1.5){
+          while(millis()<contador +4){
 
           }
         }
@@ -338,11 +407,11 @@ void bluetooth() {
         digitalWrite(dirD2, 0);
         digitalWrite(dirI1, 0);
         digitalWrite(dirI2, 1);
-        for (int i = 0; i <= 200; i++) {
+        for (int i = 0; i <= 255; i++) {
           analogWrite(pwmD, i);
           analogWrite(pwmI, i);
           contador = millis();
-          while(millis()<contador +1.5){
+          while(millis()<contador +4){
             
           }
         }
@@ -352,32 +421,57 @@ void bluetooth() {
         digitalWrite(dirD2, 0);
         digitalWrite(dirI1, 1);
         digitalWrite(dirI2, 0);
-        for (int i = 0; i <= 200; i++) {
-          analogWrite(pwmD, i);
-          analogWrite(pwmI, i);
-          contador = millis();
-          while(millis()<contador +1.5){
-            
-          }
-        }
+        analogWrite(pwmD, 150);
+        analogWrite(pwmI, 150);
         break;
       case 'R':
         digitalWrite(dirD1, 0);
         digitalWrite(dirD2, 1);
         digitalWrite(dirI1, 0);
         digitalWrite(dirI2, 1);
-        for (int i = 0; i <= 200; i++) {
-          analogWrite(pwmD, i);
-          analogWrite(pwmI, i);
-          contador = millis();
-          while(millis()<contador +1.5){
-            
-          }
-        }
+        analogWrite(pwmD, 150);
+        analogWrite(pwmI, 150);
         break;
       case 'S':
-        alto(200,30);
+        alto(100,30);
         break;
+      case 'A':
+        analogWrite(led1,1022);
+        break;
+      case 'B':
+        analogWrite(led1,0);
+        break;
+      case 'C':
+        analogWrite(led2,1022);
+        break;
+      case 'E':
+        analogWrite(led2,0);
+        break;    
+      case 'F':
+        analogWrite(led3,1022);
+        break;
+      case 'G':
+        analogWrite(led3,0);
+        break;
+      case 'H':
+        digitalWrite(buzzer_pin,HIGH);
+        break;
+      case 'I':
+        digitalWrite(buzzer_pin,LOW);
+        break;
+      case 'X':
+        if (posicion_bluetooth <= 170){
+          posicion_bluetooth = posicion_bluetooth + 10;
+          Serial.println(posicion_bluetooth);
+        }
+        servoMotor.write(posicion_bluetooth);
+      case 'Y':
+        if (posicion_bluetooth >= 10){
+          posicion_bluetooth = posicion_bluetooth - 10;
+          Serial.println(posicion_bluetooth);
+        }
+        servoMotor.write(posicion_bluetooth);
+    }
     }
   }
 }
@@ -413,6 +507,7 @@ void cambiar_pantalla( String texto,  float variable, int mapa_de_bits){
 void reset(){
     digitalWrite(buzzer_pin,HIGH);
     delay(200);
+    leds = 0;
     item_selected = 0;
     current_screen = 0;
     digitalWrite(buzzer_pin,LOW);
@@ -520,7 +615,7 @@ void atras(int tiempo, int velomotor) {
     analogWrite(pwmD, i);
     analogWrite(pwmI, i);
     contador = millis();
-    while(millis() < contador + 1.5){
+    while(millis() < contador + 4){
     }
       }
   cambiar_pantalla("Velocidad: ",velomotor,2);
@@ -541,13 +636,13 @@ void adelante(int tiempo, int velomotor, String siguiente) {
     analogWrite(pwmD, i);
     analogWrite(pwmI, i);
     contador = millis();
-    while(millis() < contador + 1.5){
+    while(millis() < contador + 4){
     }
   }
   contador = millis();
   // cambiar_pantalla("Velocidad: ",velomotor,2);
   while(millis() < contador + tiempo){
-    sensor_proximidad(10,15,25,siguiente);
+    sensor_proximidad(15,25,30,siguiente);
   }
   digitalWrite(buzzer_pin, LOW);
 }
@@ -560,17 +655,17 @@ void derecha(int grados) {
     analogWrite(pwmD, i);
     analogWrite(pwmI, i);
     contador = millis();
-    while(millis() < contador + 1.5){
+    while(millis() < contador + 1){
     }
       }
   float tiempo = 0;
   contador = micros();
   if (grados > 270){
-    tiempo = ((grados * 100000)/36) + (((grados - 270) % 10) * 4000);
+    tiempo = ((grados * 100000)/36) + (((grados - 270) % 10) * 1000);
 
   }
   else{
-    tiempo = (grados * 100000)/35;
+    tiempo = (grados * 100000)/40;
   }
   cambiar_pantalla("Grados: ",grados,5);
   while (micros()<(contador+tiempo)){
@@ -585,7 +680,7 @@ void izquierda(int grados) {
     analogWrite(pwmD, i);
     analogWrite(pwmI, i);
     contador = millis();
-    while(millis() < contador + 1.5){
+    while(millis() < contador + 1){
     }
       }
   float tiempo = 0;
@@ -595,24 +690,19 @@ void izquierda(int grados) {
 
   }
   else{
-    tiempo = (grados * 100000)/36;
+    tiempo = (grados * 100000)/40;
   }
   cambiar_pantalla("Grados: ",grados,5);
   while (micros()<(contador+tiempo)){
   }
 }
 void alto(int tiempo, int velomotor) {
-  digitalWrite(dirD1, 1);
-  digitalWrite(dirD2, 1);
-  digitalWrite(dirI1, 1);
-  digitalWrite(dirI2, 1);
-  for (int i = 0; i <= velomotor; i++) {
-    analogWrite(pwmD, i);
-    analogWrite(pwmI, i);
-    contador = millis();
-    while(millis() < contador + 1.5){
-    }
-      }
+  digitalWrite(dirD1, 0);
+  digitalWrite(dirD2, 0);
+  digitalWrite(dirI1, 0);
+  digitalWrite(dirI2, 0);
+  analogWrite(pwmD, 0);
+  analogWrite(pwmI, 0);
   contador = millis();
   cambiar_pantalla("Alto",NULL,0);
   while (millis()<(contador+tiempo)){
@@ -620,7 +710,7 @@ void alto(int tiempo, int velomotor) {
   }
 void mover_servomotor(){
     posicion_pot = analogRead(pot);
-    angulo_servo = map(posicion_pot, 0, 1023, 0, 181);
+    angulo_servo = map(posicion_pot, 0, 1023, 0, 180);
     cambiar_pantalla("Angulo: ",angulo_servo,5);
     servoMotor.write(angulo_servo);
 }
@@ -647,7 +737,7 @@ void sensor_proximidad(int limite1,int limite2, int limite3,String direccion){
       digitalWrite(buzzer_pin,HIGH);
       Serial.println(direccion);
       alto(500,10);
-       if(direccion == "D"){
+    if(direccion == "D"){
       color = strip.Color(0,0,255);
     }
     if(direccion == "I"){
@@ -660,15 +750,18 @@ void sensor_proximidad(int limite1,int limite2, int limite3,String direccion){
       strip.setPixelColor(i,color);
       strip.show();
     }
-      if(direccion == "D"){
-        derecha(90);
-      }
-      if (direccion == "I"){
-        izquierda(90);
-      }
-      if (direccion == "A"){
-        atras(1000,200);
-      }
+    if(direccion == "D"){
+      alto(100,10);
+      derecha(90);
+    }
+    if(direccion == "I"){
+      alto(100,10);
+      izquierda(90);
+    }
+    if(direccion == "A"){
+      alto(100,10);
+      atras(1000,200);
+    }
       alto(100,10);
       aux = true;
       contador = 0;
@@ -826,11 +919,13 @@ if ((digitalRead(BUTTON_SELECT_PIN) == HIGH) && (button_select_clicked == 1)) { 
     if (item_sel_next >= NUM_ITEMS) {item_sel_next = 0;} // next item would be after last = make it the first
 u8g.firstPage(); // required for page drawing mode for u8g library
 do {
-      for (int i = 0; i<4; i++){
+      if (leds == 0){
+      for (int i = 0; i<num_leds; i++){
       uint32_t color = strip.Color(255,255,255);
       strip.setPixelColor(i,color);
       }
       strip.show();
+      }
       if (current_screen == 0) { // MENU SCREEN
 
         // selected item background
@@ -863,25 +958,13 @@ do {
           
           
           if(item_selected==0){  
-            adelante(500,255,"N");
-            atras(500,255);
-            alto(1000,100);
-            derecha(90);
-            alto(1000,100);
-            izquierda(90);
-            alto(1000,100);
-            encender_led(1000,led2);
-            apagar_led(1000,led2);
-            encender_neopixel(200,400,600,800);
-            encender_buzzer(1,1000);
-            apagar_buzzer(1000);
-            potenciometro();
+            mover_servomotor();
           }
           else if(item_selected==1){ 
-            // adelante(5000,220,"D");
+            adelante(500,220,"D");
+            // derecha(90);
             // adelante(5000,220,"I");
             // adelante(5000,200,"A");
-            mover_servomotor();
 
           }
           else if(item_selected==2){
@@ -892,10 +975,7 @@ do {
           }
           else if (item_selected==3){
            bluetooth();
-          }
-
-          
+          }         
       }
 } while ( u8g.nextPage() ); // required for page drawing mode with u8g library
 }
-
